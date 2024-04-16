@@ -57,17 +57,19 @@ Successfully parallelizing these algorithms on multicore and GPU architectures f
 
 
 ## Schedule
+The following table outlines the project schedule, detailing weekly objectives leading up to the parallelism project. We start with OpenMP to understand the shared memory parallelization characteristics, then CUDA to exploit GPU acceleration, and finally MPI to scale out across multiple nodes.
 
-The following table outlines the project schedule, detailing weekly objectives leading up to the parallelism competition. Each week's goals are designed to systematically advance the project, culminating in the final report and poster presentation. The schedule incorporates time for performance testing and iterative refinement, recognizing varying weekly workloads due to other academic responsibilities.
+| Date               | Task                                                                                                                                                         |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Week 1**<br>Apr 8 - 14 | Complete serial implementation of the Needleman-Wunsch algorithms.                                                                                           |
+| April 16           | **Intermediate Milestone Report Due.**                                                                                                                       |
+| **Week 2**<br>Apr 15 - 17 | Extract useful testing cases from the NCBI ortholog dataset. Begin experiments with different parallel loop scheduling strategies in OpenMP (row, column, anti-diagonal). |
+| **Week 2**<br>Apr 18 - 21 | Complete experiments in OpenMP to gain a good understanding of the parallel performance characteristics and bottlenecks of our algorithm.                      |
+| **Week 3**<br>Apr 22 - 25 | Start implementing parallel algorithms using CUDA. Port our key OpenMP parallel loops and regions to CUDA kernels. Consider memory layout and access patterns to achieve good GPU performance.     |
+| **Week 3**<br>Apr 26 - 28 | Compare our optimized CUDA version to the OpenMP CPU version, showing the potential speedup achievable with GPU acceleration.                                  |
+| **Week 4**<br>Apr 29 - May 3 | Implement in MPI and compare with OpenMP and CUDA. If time permits, use MPI to partition the problem across nodes, with each node doing OpenMP multithreading or GPU offloading locally.  |
+| **Week 4**<br>May 4 - 5    | Analyze and compare the performance of OpenMP, CUDA, and MPI implementations. Finalize the project report and prepare the poster for presentation.              |
+| May 5               | **Final Report Due.**                                                                                                                                        |
+| May 6, 1:00-4:00pm | **Poster Session:** Present the project findings and demonstrate the achieved parallelism efficiencies in a poster format.                                    |
 
-| **Date**                 | **Task**                                                                                                                                                      |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Week 1** <br> Apr 8 - 14 | Complete serial implementation of the algorithms. Extract useful testing cases from the dataset. Begin parallelization with CUDA and conduct initial performance profiling. |
-| April 16                | **Intermediate Milestone Report Due.**                                                                                                                       |
-| **Week 2** <br> Apr 15 - 21 | Parallelize algorithms using OpenMP. Perform performance testing to evaluate improvements.                                                                    |
-| **Week 3** <br> Apr 22 - 28 | Implement parallel algorithms using MPI. Conduct performance testing to assess scalability and efficiency.                                                   |
-| **Week 4** <br> Apr 29 - May 5 | Analyze and compare the performance of CUDA, OpenMP, and MPI implementations. Finalize the project report and prepare the poster for presentation.            |
-| May 5                    | **Final Report Due.**                                                                                                                                         |
-| May 6, 1:00-4:00pm       | **Poster Session:** Present the project findings and demonstrate the achieved parallelism efficiencies in a poster format.                                     |
-
-**Note:** This schedule is subject to adjustment based on weekly progress evaluations. Continuous iteration and refinement will be integral to meeting project milestones and deliverables.
+_Note: This schedule is subject to adjustments based on weekly progress evaluations. Continuous iteration and refinement will be integral to meeting project milestones and deliverables._

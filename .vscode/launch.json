@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/oscar/Documents/CMU_Course/15618/Project",
+      "program": "/Users/oscar/Documents/CMU_Course/15618/Project/build/Debug/outDebug"
+    }
+  ]
+}

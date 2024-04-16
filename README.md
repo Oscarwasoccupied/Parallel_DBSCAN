@@ -61,7 +61,7 @@ The following table outlines the project schedule, detailing weekly objectives l
 
 | Date               | Task                                                                                                                                                         |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Week 1**<br>Apr 8 - 14 | Complete serial implementation of the Needleman-Wunsch algorithms.                                                                                           |
+| **Week 1**<br>Apr 8&nbsp;-&nbsp;14 | Complete serial implementation of the Needleman-Wunsch algorithms.                                                                                           |
 | April 16           | **Intermediate Milestone Report Due.**                                                                                                                       |
 | **Week 2**<br>Apr 15 - 17 | Extract useful testing cases from the NCBI ortholog dataset. Begin experiments with different parallel loop scheduling strategies in OpenMP (row, column, anti-diagonal). |
 | **Week 2**<br>Apr 18 - 21 | Complete experiments in OpenMP to gain a good understanding of the parallel performance characteristics and bottlenecks of our algorithm.                      |

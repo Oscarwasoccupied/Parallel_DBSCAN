@@ -62,7 +62,6 @@ The following table outlines the project schedule, detailing weekly objectives l
 | Date                          | Task |
 |-------------------------------|------|
 | **Week 1**<br>Apr&nbsp;8&nbsp;-&nbsp;14 | Complete serial implementation of the Needleman-Wunsch algorithms. |
-
 | **Week 2**<br>Apr&nbsp;15&nbsp;-&nbsp;17 | Extract useful testing cases from the NCBI ortholog dataset. Begin experiments with different parallel loop scheduling strategies in OpenMP (row, column, anti-diagonal). |
 | April&nbsp;16                 | **Intermediate Milestone Report Due.** |
 | **Week 2**<br>Apr&nbsp;18&nbsp;-&nbsp;21 | Complete experiments in OpenMP to gain a good understanding of the parallel performance characteristics and bottlenecks of our algorithm. |
@@ -71,7 +70,7 @@ The following table outlines the project schedule, detailing weekly objectives l
 | **Week 4**<br>Apr&nbsp;29&nbsp;-&nbsp;May&nbsp;3 | Implement in MPI and compare with OpenMP and CUDA. If time permits, use MPI to partition the problem across nodes, with each node doing OpenMP multithreading or GPU offloading locally. |
 | **Week 4**<br>May&nbsp;4&nbsp;-&nbsp;5    | Analyze and compare the performance of OpenMP, CUDA, and MPI implementations. Finalize the project report and prepare the poster for presentation. |
 | May&nbsp;5                    | **Final Report Due.** |
-| May&nbsp;6&nbsp;1:00&nbsp;-&nbsp;4:00&nbsp;pm      | **Poster Session:** Present the project findings and demonstrate the achieved parallelism efficiencies in a poster format. |
+| May 6<br>1:00&nbsp;-&nbsp;4:00&nbsp;pm      | **Poster Session:** Present the project findings and demonstrate the achieved parallelism efficiencies in a poster format. |
 
 
 _Note: This schedule is subject to adjustments based on weekly progress evaluations. Continuous iteration and refinement will be integral to meeting project milestones and deliverables._

@@ -54,3 +54,20 @@ Dynamic programming presents a challenge for parallelism due to:
 - **Memory Access Patterns**: Optimizing memory access to maintain high performance and avoid bottlenecks when different processors access shared data is challenging.
 
 Successfully parallelizing these algorithms on multicore and GPU architectures for genomic sequence alignment could significantly speed up bioinformatics workflows, but doing so requires overcoming substantial parallel computing obstacles. This makes the project a promising opportunity to deepen our understanding of parallel algorithm design and high-performance computing in a scientifically impactful domain.
+
+
+## Schedule
+
+The following table outlines the project schedule, detailing weekly objectives leading up to the parallelism competition. Each week's goals are designed to systematically advance the project, culminating in the final report and poster presentation. The schedule incorporates time for performance testing and iterative refinement, recognizing varying weekly workloads due to other academic responsibilities.
+
+| **Date**                 | **Task**                                                                                                                                                      |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Week 1** <br> Apr 8 - 14 | Complete serial implementation of the algorithms. Extract useful testing cases from the dataset. Begin parallelization with CUDA and conduct initial performance profiling. |
+| April 16                | **Intermediate Milestone Report Due.**                                                                                                                       |
+| **Week 2** <br> Apr 15 - 21 | Parallelize algorithms using OpenMP. Perform performance testing to evaluate improvements.                                                                    |
+| **Week 3** <br> Apr 22 - 28 | Implement parallel algorithms using MPI. Conduct performance testing to assess scalability and efficiency.                                                   |
+| **Week 4** <br> Apr 29 - May 5 | Analyze and compare the performance of CUDA, OpenMP, and MPI implementations. Finalize the project report and prepare the poster for presentation.            |
+| May 5                    | **Final Report Due.**                                                                                                                                         |
+| May 6, 1:00-4:00pm       | **Poster Session:** Present the project findings and demonstrate the achieved parallelism efficiencies in a poster format.                                     |
+
+**Note:** This schedule is subject to adjustment based on weekly progress evaluations. Continuous iteration and refinement will be integral to meeting project milestones and deliverables.

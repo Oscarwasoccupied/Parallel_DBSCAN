@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <tuple>
 #include <chrono> // Include the <chrono> header for timing
+#include <iomanip> // Include for std::setw
 
 using namespace std;
 using namespace std::chrono; // Use the std::chrono namespace for timing
@@ -69,25 +70,39 @@ tuple<vector<vector<int> >, string, string> NW_algorithm(const string& seq1, con
     return make_tuple(score, align1, align2); // Use make_tuple to create a tuple object
 }
 
-// Function to print the score matrix and alignment
+// Function to print the score matrix and alignment with better alignment across rows and columns
 void printMatrixAndAlignment(const vector<vector<int> >& matrix, const string& align1, const string& align2) {
-    for (size_t i = 0; i < matrix.size(); i++) {
-        for (size_t j = 0; j < matrix[i].size(); j++) {
-            cout << matrix[i][j] << " ";
+    int max_width = 0;
+    for (const auto& row : matrix) {
+        for (const auto& elem : row) {
+            int elem_width = to_string(elem).length() + 1; // +1 for space
+            max_width = max(max_width, elem_width);
+        }
+    }
+
+    for (const auto& row : matrix) {
+        for (const auto& elem : row) {
+            cout << setw(max_width) << elem;
         }
         cout << endl;
     }
+    cout << endl;
     cout << "Alignment:" << endl;
     cout << align1 << endl;
     cout << align2 << endl;
 }
 
 int main() {
-    string seq1 = "GATTACA";
-    string seq2 = "GCATGCUAATCACA";
+    string seq1 = "TAATTGTATCCCAT";
+    string seq2 = "GACGACGACGATCA";
     int match = 2;
     int mismatch = -1;
     int gap = -2;
+
+    // print the seq1 and seq2
+    cout << "Sequence 1: " << seq1 << endl;
+    cout << "Sequence 2: " << seq2 << endl;
+    cout << endl;
 
     tuple<vector<vector<int> >, string, string> result = NW_algorithm(seq1, seq2, match, mismatch, gap); // Correctly declare the tuple type
     vector<vector<int> > scoreMatrix = get<0>(result);
